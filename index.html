@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entrega numero 2 - curso Javascript</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Calculadora de compras</h1>
+      <p>Ingresa los productos que compraste con el formulario</p>
+      <form id="main-form">
+        <fieldset>
+          <legend>Detalles del producto</legend>
+          <div class="field">
+            <label>
+              Nombre producto:
+              <input 
+                required
+                type="text"
+                id="name"
+                name="name"
+                placeholder="nombre del producto"
+              />
+            </label>
+          </div>
+          <div class="field">
+            <label>
+              Precio:
+              <input 
+                required
+                type="number"
+                id="price"
+                name="price"
+                placeholder="precio del producto"
+              />
+            </label>
+          </div>
+          <div class="field">
+            <label>
+              Cantidad:
+              <input
+                required
+                type="number"
+                id="quantity"
+                name="quantity"
+                placeholder="nombre del producto"
+              />
+            </label>
+          </div>
+          <button>Cargar</button>
+        </fieldset>
+      </form>
+      <div class="products-container">
+        <div>
+          <h2>Calculos</h2>
+          <p>Cantidad de productos: <span id="total-quantity">0</span></p>
+          <p>Costo total: <span id="total-price">0</span></p>
+        </div>
+        <div>
+          <h2>listado de productos</h2>
+          <ul id="products-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

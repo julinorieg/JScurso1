@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .products-container {
+    display: flex;
+    gap: 10px;
+  }
